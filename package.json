@@ -1,0 +1,41 @@
+{
+  "name": "hy-octane",
+  "version": "0.0.1",
+  "description": "GitHub extension for hy-res",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --source-map",
+    "prepublish": "npm run build",
+    "test": "mocha --compilers js:babel/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/petejohanson/hy-octane.git"
+  },
+  "keywords": [
+    "hypermedia",
+    "rest",
+    "github",
+    "hy-res"
+  ],
+  "author": "Pete Johanson",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/petejohanson/hy-octane/issues"
+  },
+  "peerDependencies": {
+    "hy-res": "0.0.x"
+  },
+  "devDependencies": {
+    "babel": "~5.8.19",
+    "hy-res": "0.0.x",
+    "mocha": "~2.2.5",
+    "chai": "~3.2.0",
+    "chai-things": "~0.2.0",
+    "axios": "~0.5.4",
+    "chai-hy-res": "0.0.3"
+  },
+  "dependencies": {
+    "lodash": "~3.10.0"
+  }
+}

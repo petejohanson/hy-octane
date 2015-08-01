@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/extension.js" />
+        <item url="file://$PROJECT_DIR$/dist/extension.js" />
+        <item url="file://$PROJECT_DIR$/dist/index.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/chai-things.js" />
+      <root url="file://$PROJECT_DIR$/dist/setup.js" />
+      <root url="file://$PROJECT_DIR$/dist/chai-things.js" />
+      <root url="file://$PROJECT_DIR$/dist/setup.js" />
+      <root url="file://$PROJECT_DIR$/dist/extension.js" />
+      <root url="file://$PROJECT_DIR$/dist/extension.js" />
+      <root url="file://$PROJECT_DIR$/dist/index.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
