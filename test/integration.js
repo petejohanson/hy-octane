@@ -12,7 +12,11 @@ describe('fetching the GitHub API root', () => {
     var root;
 
     beforeEach(() => {
-        root = new HyRes.Root('https://api.github.com', Axios, [new Extension()]).follow();
+        var defaults = {};
+        if (process.env.HY_OCTANE_GITHUB_TOKEN) {
+            defaults.protocol = {headers: {'Authorization': 'bearer ' + process.env.HY_OCTANE_GITHUB_TOKEN }};
+        }
+        root = new HyRes.Root('https://api.github.com', Axios, [new Extension()], defaults).follow();
 
         return root.$promise;
     });
@@ -31,4 +35,16 @@ describe('fetching the GitHub API root', () => {
         it('resolves', () => expect(results).to.be.a.resolved.resource);
         it('includes the expected "total_count" property', () => expect(results).to.have.property('total_count').gt(0));
     });
+
+    describe('fetching the current user', () => {
+        var user;
+        beforeEach(() => {
+            user = root.$followOne('current_user');
+
+            return user.$promise;
+        });
+
+        it('resolves', () => expect(user).to.be.a.resolved.resource);
+        it('has the user login', () => expect(user).to.have.property('login'));
+    })
 });
