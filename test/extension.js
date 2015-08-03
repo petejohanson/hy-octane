@@ -149,6 +149,28 @@ describe('GitHubV3Extensions', () => {
         "updated_at": "2011-04-14T16:00:49Z"
       })).to.have.deep.property('html[0].href').eql('https://github.com/octocat/Hello-World/issues/1347#issuecomment-1');
     });
+
+    it('ignores _url properties with null properties', () => {
+      expect(ext.linkParser({
+        "login": "octocat",
+        "id": 1,
+        "avatar_url": null,
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/octocat",
+        "html_url": "https://github.com/octocat",
+        "followers_url": "https://api.github.com/users/octocat/followers",
+        "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+        "organizations_url": "https://api.github.com/users/octocat/orgs",
+        "repos_url": "https://api.github.com/users/octocat/repos",
+        "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/octocat/received_events",
+        "type": "User",
+        "site_admin": false
+      })).to.not.have.property('avatar');
+    });
   });
 
   describe('embeddedParser', () => {

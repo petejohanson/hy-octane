@@ -46,5 +46,15 @@ describe('fetching the GitHub API root', () => {
 
         it('resolves', () => expect(user).to.be.a.resolved.resource);
         it('has the user login', () => expect(user).to.have.property('login'));
-    })
+
+        describe('and fetching their repositories', () => {
+            var repos;
+            beforeEach(() => {
+                repos = user.$followOne('repos');
+                return repos.$promise;
+            });
+
+            it('has the array of repositories under the "item" link relation', () => expect(repos.$subs('item')).to.exist);
+        });
+    });
 });

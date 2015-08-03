@@ -33,7 +33,7 @@ class GitHubV3Extension {
             ret.self = [new WebLink({href: data.url, templated: (data.url.indexOf('{') > -1)}, context)];
         }
 
-        var o = _.mapKeys(_.pick(data, (val, key) => _.endsWith(key, '_url')), (val, key) => key.substring(0, key.length - 4));
+        var o = _.mapKeys(_.pick(data, (val, key) => val && _.endsWith(key, '_url')), (val, key) => key.substring(0, key.length - 4));
 
         _.assign(ret, _.mapValues(o, (val) => [new WebLink({href: val, templated: (val.indexOf('{') > -1) }, context)]));
 
