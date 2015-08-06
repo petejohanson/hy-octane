@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src --out-dir dist --source-map",
     "prepublish": "npm run build",
-    "test": "mocha --compilers js:babel/register"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
@@ -28,12 +28,27 @@
   },
   "devDependencies": {
     "babel": "~5.8.19",
+    "gulp": "~3.8.8",
+    "gulp-bump": "~0.1.11",
+    "gulp-gh-pages": "^0.5.1",
+    "gulp-git": "~0.5.0",
+    "gulp-jshint": "~1.8.4",
+    "gulp-mocha": "^2.0.0",
+    "gulp-rename": "~1.2.0",
+    "gulp-shell": "^0.4.1",
+    "gulp-tag-version": "~1.1.0",
+    "gulp-watch": "^3.0.0",
     "hy-res": "0.0.x",
     "mocha": "~2.2.5",
     "chai": "~3.2.0",
     "chai-things": "~0.2.0",
     "axios": "~0.5.4",
-    "chai-hy-res": "0.0.3"
+    "chai-hy-res": "0.0.3",
+    "jsdoc": "jsdoc3/jsdoc",
+    "minami": "~1.1.0",
+    "lazypipe": "~1.0.1",
+    "run-sequence": "~1.1.2",
+    "jshint-stylish": "~2.0.1"
   },
   "dependencies": {
     "lodash": "~3.10.0"

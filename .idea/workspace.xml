@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ec4870c-3cdc-4b3f-af7d-fbe311dd3f19" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+    <list default="true" id="5ec4870c-3cdc-4b3f-af7d-fbe311dd3f19" name="Default" comment="Test for 'item' handle for array responses. Fixes.&#10;&#10;* Integration test for handling of array responses as resources&#10;  embedded with the IANA standard 'item' link relation.&#10;* Bug fix for handling null `foo_url` properties.&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jsdoc.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/extension.js" afterPath="$PROJECT_DIR$/test/extension.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hy-octane.iws" />
@@ -24,14 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="42" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.53872055">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -49,14 +52,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GulpTreeLayoutManager">
+    <layout place="tools.popup">
+      <scroll-view-position x="0" y="188" />
+    </layout>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/extension.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/test/integration.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/test/integration.js" />
+        <option value="$PROJECT_DIR$/jsdoc.json" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/test/extension.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
       </list>
     </option>
   </component>
@@ -67,6 +77,75 @@
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+        <tasks>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="jshint:src" />
+              <dependency value="jshint:test" />
+              <dependency value="jshint:gulpfile" />
+            </dependencies>
+            <task-name>jshint</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>jshint:src</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>jshint:test</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>jshint:gulpfile</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>test:watch</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>jsdoc:watch</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>jsdoc</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>bump</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>bump-commit</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>tag</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>release</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="jsdoc" />
+            </dependencies>
+            <task-name>gh-pages</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>mocha</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="test" />
+            </dependencies>
+            <task-name>default</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>test</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>coverage</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>ci</task-name>
+          </GulpTaskState>
+        </tasks>
+      </GulpfileState>
+    </gulpfiles>
   </component>
   <component name="NamedScopeManager">
     <scope name="Project Source Files" pattern="file[hy-octane]:src//*" />
@@ -165,8 +244,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,7 +256,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="INDE&#9;FILE&#9;file:///home/peter/git/hy-octane/src/index.js&#10;Git&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="gulp&#9;FILE&#9;file:///home/peter/git/hy-octane/gulpfile.js&#10;package&#9;FILE&#9;file:///home/peter/git/hy-octane/package.json&#10;dex&#9;FILE&#9;file:///home/peter/git/hy-octane/src/index.js&#10;jsdoc&#9;FILE&#9;file:///home/peter/git/hy-octane/jsdoc.json&#10;git&#9;null&#9;null&#10;inde&#9;FILE&#9;file:///home/peter/git/hy-octane/src/index.js&#10;i&#9;FILE&#9;file:///home/peter/git/hy-octane/test/integration.js&#10;INDE&#9;FILE&#9;file:///home/peter/git/hy-octane/src/index.js&#10;Git&#9;null&#9;null" />
     <property name="JavaScriptLanguageLevel" value="ES6" />
     <property name="FullScreen" value="false" />
   </component>
@@ -263,31 +342,58 @@
       <option name="project" value="LOCAL" />
       <updated>1438403858486</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add minimal README.">
+      <created>1438404138316</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1438404138316</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Properly calculate WebLink 'templated' value for links.&#10; &#10; * Use presence of '{' character to trigger marking a WebLink&#10;   as templated in the GH API.">
+      <created>1438405013885</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1438405013885</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Test for 'item' handle for array responses. Fixes.&#10;&#10;* Integration test for handling of array responses as resources&#10;  embedded with the IANA standard 'item' link relation.&#10;* Bug fix for handling null `foo_url` properties.&#10;">
+      <created>1438573147937</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1438573147937</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24597365" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24597365" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32791728" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55982274" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.55982274" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.450517" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293944" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -304,52 +410,66 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ignore dist directory." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ignore dist directory." />
+    <MESSAGE value="Add minimal README." />
+    <MESSAGE value="Properly calculate WebLink 'templated' value for links.&#10; &#10; * Use presence of '{' character to trigger marking a WebLink&#10;   as templated in the GH API." />
+    <MESSAGE value="Test for 'item' handle for array responses. Fixes.&#10;&#10;* Integration test for handling of array responses as resources&#10;  embedded with the IANA standard 'item' link relation.&#10;* Bug fix for handling null `foo_url` properties.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test for 'item' handle for array responses. Fixes.&#10;&#10;* Integration test for handling of array responses as resources&#10;  embedded with the IANA standard 'item' link relation.&#10;* Bug fix for handling null `foo_url` properties.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+          <folding>
+            <marker date="1438832509893" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: &quot;hy-octane&quot;...}" />
+            <marker date="1438832509893" expanded="true" signature="-1:-1" placeholder="{&quot;build&quot;: &quot;babel src --out-dir dist --source-map&quot;...}" />
+            <marker date="1438832509893" expanded="true" signature="-1:-1" placeholder="{&quot;type&quot;: &quot;git&quot;...}" />
+            <marker date="1438832509893" expanded="true" signature="-1:-1" placeholder="[...]" />
+            <marker date="1438832509893" expanded="true" signature="-1:-1" placeholder="{&quot;url&quot;: &quot;https://github.com/petejohanson/hy-octane/issues&quot;...}" />
+            <marker date="1438832509893" expanded="true" signature="-1:-1" placeholder="{&quot;hy-res&quot;: &quot;0.0.x&quot;...}" />
+            <marker date="1438832509893" expanded="true" signature="-1:-1" placeholder="{&quot;babel&quot;: &quot;~5.8.19&quot;...}" />
+            <marker date="1438832509893" expanded="true" signature="-1:-1" placeholder="{&quot;lodash&quot;: &quot;~3.10.0&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/extension.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/extension.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/integration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/extension.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: 'bug'...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: 'bug'...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: 'bug'...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: 'bug'...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -357,101 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.14537445">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <marker date="1438403212209" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438403212209" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438403212209" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1438403212209" expanded="true" signature="-1:-1" placeholder="{&quot;key&quot;: 'applies'...}" />
-            <marker date="1438403212209" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438403212209" expanded="true" signature="-1:-1" placeholder="{&quot;key&quot;: 'dataParser'...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4107744">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <marker date="1438403211328" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438403211328" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438403211328" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438403211328" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438403211328" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438403211328" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438403211328" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438403211328" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/extension.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4107744">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="35" />
-          <folding>
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: 'bug'...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: 'bug'...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: 'bug'...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1438402950240" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: 'bug'...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/integration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8080808">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding>
-            <marker date="1438403304967" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438403304967" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029850746">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding>
-            <marker date="1438403343488" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: &quot;hy-octane&quot;...}" />
-            <marker date="1438403343488" expanded="true" signature="-1:-1" placeholder="{&quot;build&quot;: &quot;babel src --out-dir dist --source-map&quot;...}" />
-            <marker date="1438403343488" expanded="true" signature="-1:-1" placeholder="{&quot;type&quot;: &quot;git&quot;...}" />
-            <marker date="1438403343488" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1438403343488" expanded="true" signature="-1:-1" placeholder="{&quot;url&quot;: &quot;https://github.com/petejohanson/hy-octane/issues&quot;...}" />
-            <marker date="1438403343488" expanded="true" signature="-1:-1" placeholder="{&quot;hy-res&quot;: &quot;0.0.x&quot;...}" />
-            <marker date="1438403343488" expanded="true" signature="-1:-1" placeholder="{&quot;babel&quot;: &quot;~5.8.19&quot;...}" />
-            <marker date="1438403343488" expanded="true" signature="-1:-1" placeholder="{&quot;lodash&quot;: &quot;~3.10.0&quot;...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -462,6 +487,132 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="42" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/integration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3939394">
+          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/gulp/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53638816">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <marker date="1423343631000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423343631000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423343631000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1423343631000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423343631000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423343631000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423343631000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsdoc.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3283582">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <folding>
+            <marker date="1438831032335" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438831032335" expanded="true" signature="-1:-1" placeholder="{&quot;allowUnknownTags&quot;: true...}" />
+            <marker date="1438831032335" expanded="true" signature="-1:-1" placeholder="{&quot;includePattern&quot;: &quot;(./src/.+\\.js(doc)?$)&quot;...}" />
+            <marker date="1438831032335" expanded="true" signature="-1:-1" placeholder="{&quot;cleverLinks&quot;: false...}" />
+            <marker date="1438831032335" expanded="true" signature="-1:-1" placeholder="{&quot;readme&quot;: &quot;./README.md&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.86531985">
+          <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
+          <folding>
+            <marker date="1438831828481" expanded="true" signature="-1:-1" placeholder="/** @external HyRes ...*/" />
+            <marker date="1438831828481" expanded="true" signature="-1:-1" placeholder="/** External interface that defines a media type extension ...*/" />
+            <marker date="1438831828481" expanded="true" signature="-1:-1" placeholder="/** ...*/" />
+            <marker date="1438831828481" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438831828481" expanded="true" signature="-1:-1" placeholder="/** Create a new instance of the GitHub V3 Extensions ...*/" />
+            <marker date="1438831828481" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438831828481" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438831828481" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438831828481" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438831828481" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438831828481" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438831828481" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/extension.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6329966">
+          <caret line="217" column="25" selection-start-line="217" selection-start-column="25" selection-end-line="217" selection-end-column="25" />
+          <folding>
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: 'bug'...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="[...]" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: 'bug'...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="[...]" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="[...]" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: 'bug'...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 1...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="[...]" />
+            <marker date="1438832467640" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: 'bug'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36940297">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <marker date="1438832509893" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: &quot;hy-octane&quot;...}" />
+            <marker date="1438832509893" expanded="true" signature="-1:-1" placeholder="{&quot;build&quot;: &quot;babel src --out-dir dist --source-map&quot;...}" />
+            <marker date="1438832509893" expanded="true" signature="-1:-1" placeholder="{&quot;type&quot;: &quot;git&quot;...}" />
+            <marker date="1438832509893" expanded="true" signature="-1:-1" placeholder="[...]" />
+            <marker date="1438832509893" expanded="true" signature="-1:-1" placeholder="{&quot;url&quot;: &quot;https://github.com/petejohanson/hy-octane/issues&quot;...}" />
+            <marker date="1438832509893" expanded="true" signature="-1:-1" placeholder="{&quot;hy-res&quot;: &quot;0.0.x&quot;...}" />
+            <marker date="1438832509893" expanded="true" signature="-1:-1" placeholder="{&quot;babel&quot;: &quot;~5.8.19&quot;...}" />
+            <marker date="1438832509893" expanded="true" signature="-1:-1" placeholder="{&quot;lodash&quot;: &quot;~3.10.0&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53872055">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
         </state>
       </provider>

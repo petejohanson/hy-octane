@@ -1,0 +1,29 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc"]
+  },
+  "source": {
+    "includePattern": "(./src/.+\\.js(doc)?$)",
+    "excludePattern": "(test|node_modules)"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "systemName": "hy-octane",
+    "copyright": "&copy; Peter Johanson",
+    "theme": "united",
+    "outputSourceFiles": "true",
+    "highlightTutorialCode": "true",
+    "syntaxTheme": "dark",
+    "linenums": "true",
+    "inverseNav": "true"
+  },
+  "opts": {
+    "readme": "./README.md",
+    "recurse": true,
+    "template": "node_modules/minami",
+    "destination": "./doc/"
+  }
+}
