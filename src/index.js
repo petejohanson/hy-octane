@@ -103,13 +103,12 @@ class GitHubV3Extension {
     linkParser(data, headers, context) {
         var ret = {};
         if (data.url) {
-            //ret.self = LinkCollection.fromArray([new WebLink({href: data.url}, context)]);
-            ret.self = [new WebLink({href: data.url, templated: (data.url.indexOf('{') > -1)}, context)];
+            ret.self = LinkCollection.fromArray([new WebLink({href: data.url, templated: (data.url.indexOf('{') > -1)}, context)]);
         }
 
         var o = _.mapKeys(_.pick(data, (val, key) => val && _.endsWith(key, '_url')), (val, key) => key.substring(0, key.length - 4));
 
-        _.assign(ret, _.mapValues(o, (val) => [new WebLink({href: val, templated: (val.indexOf('{') > -1) }, context)]));
+        _.assign(ret, _.mapValues(o, (val) => LinkCollection.fromArray([new WebLink({href: val, templated: (val.indexOf('{') > -1) }, context)])));
 
         return ret;
     }
